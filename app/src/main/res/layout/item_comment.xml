@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp">
+
+    <com.yhjiankang.business.widegt.RoundedImageView
+        android:id="@+id/ivHead"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@mipmap/nohead"
+        android:scaleType="centerCrop"
+        app:oval="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/ivHead">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:text="111111"
+            android:textColor="@color/black" />
+
+        <RatingBar
+            android:id="@+id/rb_comment"
+            style="@style/MySmallRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_first"
+        android:layout_toRightOf="@id/ivHead"
+        android:paddingLeft="5dp"
+        android:text="2015-06-06 15:00:00" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_toRightOf="@id/ivHead"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingLeft="5dp"
+        android:text="不错" />
+
+    <LinearLayout
+        android:id="@+id/ll_img"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/tvContent"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/ivHead"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+</RelativeLayout>

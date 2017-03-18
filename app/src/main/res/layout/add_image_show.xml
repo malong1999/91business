@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+
+        <com.yhjiankang.business.widegt.imagescan.ImageShow
+            android:id="@+id/id_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#19000000">
+
+            <TextView
+                android:id="@+id/deleteImageBack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:background="@mipmap/img_scan_back" />
+
+            <TextView
+                android:id="@+id/deleteImageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/deleteImage"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="right"
+                android:padding="10dip"
+                android:src="@mipmap/ic_delete" />
+        </FrameLayout>
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

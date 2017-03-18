@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/civ_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/iv_nohead"
+            app:civ_border="false"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/civ_head"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1111"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1111"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/mrl_ruzhu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleRoundedCorners="100dp"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:id="@+id/iv_ruzhu"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_ruzhu" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mrl_ruzhu"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/layout_settledhome_ruz"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/mrl_zhaoshang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleRoundedCorners="100dp"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:id="@+id/iv_zhaoshang"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_zhaoshang" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mrl_zhaoshang"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/layout_settledhome_zhaos"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="142dp"
+                        android:layout_height="96dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_rzxz" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="142dp"
+                        android:layout_height="96dp"
+                        android:layout_marginTop="21dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_zfbz" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="142dp"
+                        android:layout_height="96dp"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginTop="21dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_rzlc" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="142dp"
+                        android:layout_height="96dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_zsbz" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="142dp"
+                        android:layout_height="96dp"
+                        android:layout_marginTop="21dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_zlxz" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="142dp"
+                        android:layout_height="96dp"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginTop="21dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="#585858"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@mipmap/ic_zysx" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

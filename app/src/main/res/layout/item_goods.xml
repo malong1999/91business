@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_goodsitem"
+    android:layout_width="match_parent"
+    android:layout_height="91dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="match_parent">
+
+        <com.yhjiankang.business.widegt.MyCheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            app:color_checked="@color/colorAccent"
+            app:stroke_width="1dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goodsname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="保健品" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_shoujia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="售价:" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/tv_shoujia"
+                android:gravity="center"
+                android:text="77777.00"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_price"
+                android:gravity="center"
+                android:text="元" />
+
+            <TextView
+                android:id="@+id/tv_storenum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="库存:1000" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

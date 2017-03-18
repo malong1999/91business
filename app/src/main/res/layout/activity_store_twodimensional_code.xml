@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yhjiankang.business.ui.activity.StoreTwodimensionalCodeActivity">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sz_150"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/sz_110"
+            android:layout_height="match_parent">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="@dimen/sz_76"
+                android:layout_height="@dimen/sz_76"
+                android:layout_gravity="center"
+                android:padding="@dimen/sz_10"
+                android:src="@drawable/test_head" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="就医电商旗舰店"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/sz_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/sz_18"
+                    android:layout_height="@dimen/sz_18"
+                    android:src="@mipmap/ic_star" />
+
+                <ImageView
+                    android:layout_width="@dimen/sz_18"
+                    android:layout_height="@dimen/sz_18"
+                    android:src="@mipmap/ic_star" />
+
+                <ImageView
+                    android:layout_width="@dimen/sz_18"
+                    android:layout_height="@dimen/sz_18"
+                    android:src="@mipmap/ic_star" />
+
+                <ImageView
+                    android:layout_width="@dimen/sz_18"
+                    android:layout_height="@dimen/sz_18"
+                    android:src="@mipmap/ic_star" />
+
+                <ImageView
+                    android:layout_width="@dimen/sz_18"
+                    android:layout_height="@dimen/sz_18"
+                    android:src="@mipmap/ic_star" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺状态:"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/sz_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sz_10"
+                    android:text="营业中"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sz_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_two_dimensional"
+        android:layout_width="@dimen/sz_226"
+        android:layout_height="@dimen/sz_226"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="使用91健康商城APP扫描上图中的二维码"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/sz_16" />
+
+</LinearLayout>

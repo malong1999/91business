@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--第一排-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/sz_142"-->
+            <!--android:layout_marginTop="@dimen/sz_20"-->
+            <!--android:background="@color/white"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="@dimen/sz_20">-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+            <!--android:id="@+id/sdv_head"-->
+            <!--android:layout_width="@dimen/sz_150"-->
+            <!--android:layout_height="@dimen/sz_150"-->
+            <!--android:layout_gravity="center_horizontal|center_vertical"-->
+            <!--android:paddingLeft="@dimen/sz_40"-->
+            <!--android:paddingRight="@dimen/sz_40"-->
+            <!--fresco:actualImageScaleType="fitXY"-->
+            <!--fresco:placeholderImage="@mipmap/ic_header"-->
+            <!--fresco:roundAsCircle="true"/>-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorFrameGray"/>-->
+
+            <!--&lt;!&ndash;名+星星+地址&ndash;&gt;-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/sz_8"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--&lt;!&ndash;店铺&ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="九一健康旗舰店"-->
+            <!--android:textColor="@color/colorTextPrimary"-->
+            <!--android:textSize="@dimen/sz_16"/>-->
+
+            <!--&lt;!&ndash;id&ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="店铺id：18624616670"-->
+            <!--android:textColor="@color/colorTextSecondary"-->
+            <!--android:textSize="@dimen/sz_12"-->
+            <!--android:layout_marginTop="@dimen/sz_4"/>-->
+
+            <!--&lt;!&ndash;星星&ndash;&gt;-->
+            <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/sz_40"-->
+            <!--&gt;-->
+
+            <!--<RatingBar-->
+            <!--android:id="@+id/rb_comment"-->
+            <!--style="@style/MySmallRatingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:isIndicator="true"-->
+            <!--android:numStars="5"-->
+            <!--android:stepSize="1"/>-->
+            <!--</FrameLayout>-->
+
+            <!--&lt;!&ndash;地址&ndash;&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="疗伤的合法的时间和法兰克了控件的方式来看电视"-->
+            <!--android:textColor="@color/colorTextSecondary"-->
+            <!--android:textSize="@dimen/sz_12"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<include layout="@layout/view_horizontal_line_wider"/>-->
+
+            <!--<com.yhjiankang.business.ui.view.MineItemView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/sz_40"-->
+            <!--fresco:image="@mipmap/ic_password"-->
+            <!--fresco:title="认证手机"/>-->
+
+            <!--</LinearLayout>-->
+
+            <include layout="@layout/view_horizontal_line_wider" />
+
+            <com.yhjiankang.business.ui.view.MineItemView
+                android:id="@+id/miv_phone_authentication"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_60"
+                android:gravity="center_vertical"
+                app:image="@mipmap/ic_phone_authentication"
+                app:mine_title="手机认证" />
+
+            <include layout="@layout/view_horizontal_line_one" />
+
+            <com.yhjiankang.business.ui.view.MineItemView
+                android:id="@+id/miv_bind_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_60"
+                android:gravity="center_vertical"
+                app:image="@mipmap/ic_bind_email"
+                app:mine_title="绑定邮箱" />
+
+            <include layout="@layout/view_horizontal_line_one" />
+
+            <com.yhjiankang.business.ui.view.MineItemView
+                android:id="@+id/miv_enterprise_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_60"
+                android:gravity="center_vertical"
+                app:image="@mipmap/ic_enterprise_qualification"
+                app:mine_title="企业资质" />
+
+            <include layout="@layout/view_horizontal_line_wider" />
+
+            <com.yhjiankang.business.ui.view.MineItemView
+                android:id="@+id/miv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_60"
+                android:gravity="center_vertical"
+                app:image="@mipmap/ic_feedback"
+                app:mine_title="意见反馈" />
+
+            <include layout="@layout/view_horizontal_line_one" />
+
+            <com.yhjiankang.business.ui.view.MineItemView
+                android:id="@+id/miv_about_us"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_60"
+                android:gravity="center_vertical"
+                app:image="@mipmap/ic_about_us"
+                app:mine_title="关于我们" />
+
+            <include layout="@layout/view_horizontal_line_wider" />
+
+            <com.yhjiankang.business.ui.view.MineItemView
+                android:id="@+id/miv_newcomer_read"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_60"
+                android:gravity="center_vertical"
+                app:image="@mipmap/ic_newcomer_read"
+                app:mine_title="新手必读" />
+
+            <include layout="@layout/view_horizontal_line_wider" />
+
+            <com.yhjiankang.business.ui.view.MineItemView
+                android:id="@+id/miv_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_60"
+                android:gravity="center_vertical"
+                app:image="@mipmap/ic_clear_cache"
+                app:mine_title="清理缓存" />
+
+            <include layout="@layout/view_horizontal_line_wider" />
+
+            <Button
+                android:id="@+id/btn_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sz_10"
+                android:background="@color/colorPrimary"
+                android:text="退出登录"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sz_50" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

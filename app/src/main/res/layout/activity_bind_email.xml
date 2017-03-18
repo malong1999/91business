@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal">
+    <include layout="@layout/common_title"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/sz_250"
+        android:layout_height="@dimen/sz_34"
+        android:layout_marginTop="@dimen/sz_24"
+        android:background="@drawable/shape_login"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/sz_68"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="请输入邮箱"
+            android:textSize="@dimen/sz_10"
+            android:textColor="@color/colorTextPrimary"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入注册时的邮箱地址"
+            android:paddingLeft="@dimen/sz_8"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/sz_10" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="@dimen/sz_256"
+        android:layout_height="wrap_content"
+        android:text="我们会给你的邮箱发送验证邮件，请按照系统提示按步骤操作"
+        android:layout_marginTop="@dimen/sz_14"
+        android:textSize="@dimen/sz_9"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorTextSecondary"/>
+
+    <Button
+        android:layout_width="@dimen/sz_250"
+        android:layout_height="@dimen/sz_34"
+        android:layout_marginTop="@dimen/sz_50"
+        android:background="@color/colorPrimary"
+        android:text="发送验证链接"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sz_14" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/sz_20">
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/nim_message_item_text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="phone|email|map|web"
+            android:gravity="center_vertical|left"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3dip"
+            android:maxWidth="@dimen/sz_222"
+            android:text="sdfkjhsdlfkjs"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/nim_message_right_blue_bg"
+            android:paddingLeft="@dimen/sz_16"
+            android:paddingTop="@dimen/sz_8"
+            android:paddingRight="@dimen/sz_10"
+            android:paddingBottom="@dimen/sz_8"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="@dimen/sz_40"
+        android:layout_height="@dimen/sz_40"
+        android:src="@mipmap/ic_launcher"/>
+
+</LinearLayout>

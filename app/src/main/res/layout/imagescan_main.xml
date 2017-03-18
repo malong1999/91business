@@ -1,0 +1,67 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/main_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:columnWidth="90dip"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="2"
+            android:padding="10dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dip"></GridView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#555555"
+            android:padding="8dip">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/imagescan_main_cancel"
+                android:textSize="15sp" />
+            <!--
+            android:background="@drawable/btn_style_grey"
+            android:textColor="@color/grey_btn_txt_color"
+            -->
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="@string/imagescan_main_determine"
+                android:textSize="15sp" />
+            <!--
+             android:background="@drawable/btn_style_green"
+             android:textColor="@color/green_btn_text_color"
+            -->
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
